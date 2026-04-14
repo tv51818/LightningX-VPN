@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>闪连VPN - 高速稳定Clash机场|全球节点网络加速服务</title>
+    <meta name="keywords" content="闪连VPN, Clash机场, 高速VPN, 稳定节点, 科学上网, 全球网络, 网络加速, VPN服务" />
+    <meta name="description" content="闪连VPN提供高速稳定的Clash机场服务，全球节点覆盖，安全加密保护隐私，支持多设备使用，现在使用邀请码91729535即可免费试用15天。" />
+    
+    <style>
+        :root {
+            --accent: #0071e3;
+            --dark: #1d1d1f;
+            --light-bg: #f5f5f7;
+        }
+
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Helvetica Neue", Arial, sans-serif;
+            background-color: #fff;
+            color: var(--dark);
+            line-height: 1.5;
+            overflow-x: hidden;
+        }
+
+        /* 顶部导航 Logo */
+        .top-nav {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            padding: 30px 40px;
+            z-index: 100;
+        }
+
+        .logo-container {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            text-decoration: none;
+            color: var(--dark);
+        }
+
+        .logo-icon {
+            width: 32px;
+            height: 32px;
+            background: linear-gradient(135deg, var(--accent), #00c6ff);
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: 900;
+            font-size: 1.2rem;
+            box-shadow: 0 4px 10px rgba(0, 113, 227, 0.3);
+        }
+
+        .logo-text {
+            font-size: 1.5rem;
+            font-weight: 800;
+            letter-spacing: -1px;
+        }
+
+        /* 全屏 Hero 容器 */
+        .hero-section {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 100px 20px 40px;
+            background: radial-gradient(circle at 0% 0%, #f0f7ff 0%, #ffffff 50%);
+        }
+
+        .main-container {
+            width: 100%;
+            max-width: 1100px;
+            display: grid;
+            grid-template-columns: 1.2fr 1fr;
+            gap: 60px;
+            align-items: center;
+        }
+
+        /* 左侧文案 */
+        .content-left h1 {
+            font-size: clamp(2.5rem, 5vw, 4rem);
+            font-weight: 800;
+            line-height: 1.1;
+            margin-bottom: 24px;
+            letter-spacing: -2px;
+        }
+
+        .content-left p {
+            font-size: 1.25rem;
+            color: #86868b;
+            margin-bottom: 30px;
+        }
+
+        .feature-tags {
+            display: flex;
+            gap: 12px;
+            flex-wrap: wrap;
+        }
+
+        .tag {
+            padding: 6px 14px;
+            background: var(--light-bg);
+            border-radius: 20px;
+            font-size: 0.9rem;
+            font-weight: 500;
+            color: #555;
+        }
+
+        /* 右侧核心操作区 */
+        .action-card {
+            background: var(--dark);
+            color: #fff;
+            padding: 50px 40px;
+            border-radius: 32px;
+            box-shadow: 0 30px 60px rgba(0,0,0,0.2);
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .action-card::before {
+            content: "";
+            position: absolute;
+            top: -50%; left: -50%;
+            width: 200%; height: 200%;
+            background: radial-gradient(circle at center, rgba(0,113,227,0.15) 0%, transparent 70%);
+            pointer-events: none;
+        }
+
+        .download-title {
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            opacity: 0.6;
+            margin-bottom: 20px;
+            display: block;
+        }
+
+        /* 下载按钮：新窗口打开 */
+        .btn-download {
+            display: block;
+            background: #fff;
+            color: var(--dark);
+            padding: 22px;
+            border-radius: 18px;
+            text-decoration: none;
+            font-size: 1.4rem;
+            font-weight: 700;
+            margin-bottom: 40px;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            position: relative;
+            z-index: 1;
+        }
+
+        .btn-download:hover {
+            transform: translateY(-4px);
+            background: var(--accent);
+            color: #fff;
+            box-shadow: 0 10px 25px rgba(0, 113, 227, 0.4);
+        }
+
+        .invite-box {
+            border-top: 1px solid rgba(255,255,255,0.1);
+            padding-top: 35px;
+            position: relative;
+            z-index: 1;
+        }
+
+        .invite-label {
+            font-size: 0.95rem;
+            opacity: 0.7;
+            margin-bottom: 15px;
+            display: block;
+        }
+
+        .invite-code {
+            font-family: "SF Mono", ui-monospace, Menlo, Monaco, monospace;
+            font-size: clamp(2.5rem, 4vw, 3.2rem);
+            font-weight: 800;
+            color: #fff;
+            display: block;
+            margin-bottom: 20px;
+            letter-spacing: 3px;
+        }
+
+        .bonus-badge {
+            display: inline-block;
+            background: #ff3b30;
+            color: #fff;
+            padding: 6px 16px;
+            border-radius: 10px;
+            font-size: 1.1rem;
+            font-weight: 700;
+            animation: pulse 2s infinite;
+        }
+
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+            100% { transform: scale(1); }
+        }
+
+        /* 移动端适配 */
+        @media (max-width: 900px) {
+            .top-nav { padding: 20px; text-align: center; }
+            .logo-container { justify-content: center; }
+            .hero-section { padding-top: 120px; }
+            .main-container { grid-template-columns: 1fr; gap: 40px; text-align: center; }
+            .action-card { padding: 40px 24px; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="top-nav">
+        <div class="logo-container">
+            <div class="logo-icon">S</div>
+            <span class="logo-text">闪连VPN</span>
+        </div>
+    </div>
+
+    <section class="hero-section">
+        <div class="main-container">
+            
+            <div class="content-left">
+                <h1>极速连接，<br>从未如此简单。</h1>
+                <p>2026 全新 BGP 专线架构，为您提供稳定、安全、畅通无阻的全球网络加速服务。</p>
+                <div class="feature-tags">
+                    <span class="tag">⚡️ BGP 专线</span>
+                    <span class="tag">🛡️ 隐私加密</span>
+                    <span class="tag">📱 5台设备</span>
+                    <span class="tag">🎬 8K 丝滑</span>
+                </div>
+            </div>
+
+            <div class="action-card">
+                <div class="download-area">
+                    <span class="download-title">官方地址</span>
+                    <a href="https://slaclouds.com/download?inviteCode=91729535&lang=zh-CN" 
+                       class="btn-download" 
+                       target="_blank" 
+                       rel="noopener noreferrer">立即下载试用</a>
+                </div>
+
+                <div class="invite-box">
+                    <span class="invite-label">注册时填写专属邀请码</span>
+                    <strong class="invite-code">91729535</strong>
+                    <div class="bonus-badge">🎁 获赠 15 天免费时长</div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+</body>
+</html>
